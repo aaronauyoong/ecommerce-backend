@@ -18,18 +18,13 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/:id", async (req, res) => {
-	// find a single tag by its `id`
-	const tagData = await Tag.findOne({
-		where: {
-			id: req.params.id,
-		},
+	const tagData = await Tag.findByPk(req.params.id, {
 		include: [
 			{
-				// be sure to include its associated Product data
 				model: Product,
 				attributes: ["id", "product_name", "price", "stock", "category_id"],
-			},
-		],
+			}
+		]
 	});
 	return res.status(200).json(tagData);
 });
