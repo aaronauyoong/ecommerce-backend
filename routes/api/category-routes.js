@@ -3,16 +3,51 @@ const { Category, Product } = require("../../models");
 
 // The `/api/categories` endpoint
 
-router.get("/", (req, res) => {
+router.get("/", async (req, res) => {
 	// find all categories
-	Category.findAll().then(() => {});
-	// be sure to include its associated Products
+	const categoryData = await Category.findAll({
+    // be sure to include its associated Products
+    include: [
+      {
+        model: Product,
+        attributes: ["id", "product_name", "price", "stock", "category_id"]
+      }
+    ]
+  });
+  return res.status(200).json(categoryData);
 });
 
-router.get("/:id", (req, res) => {
+// findOne method (success)
+// router.get("/:id", async (req, res) => {
+// 	// find one category by its `id` value
+// 	const categoryData = await Category.findOne({
+//     where: {
+//       id: req.params.id
+//     }, 
+//     // be sure to include its associated Products
+//     include: [
+//       {
+//         model: Product,
+//         attributes: ["id", "product_name", "price", "stock", "category_id"],
+//       }
+//     ]
+//   });
+//   return res.status(200).json(categoryData);
+// });
+
+// findByPk method (fail)
+router.get("/:id", async (req, res) => {
 	// find one category by its `id` value
-	Category.findByPk().then(() => {});
-	// be sure to include its associated Products
+	const categoryData = await Category.findByPk(req.params.id, {
+    // be sure to include its associated Products
+    include: [
+      {
+        model: Product,
+        attributes: ["id", "product_name", "price", "stock", "category_id"]
+      }
+    ]
+  });
+  return res.status(200).json(categoryData);
 });
 
 router.post("/", (req, res) => {
