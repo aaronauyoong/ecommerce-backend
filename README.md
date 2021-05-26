@@ -3,7 +3,7 @@
 # E-Commerce Back End
 Project Owner: Aaron Au Yoong
 <br>
-A video demo of the application can be found [here]().
+A video demo of the application can be found [here](https://youtu.be/nf3LFDj1ixw).
 <br>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
 
@@ -169,7 +169,7 @@ DB_PW = [Please insert your MySQL Workbench Password here]
 5. Run `npm run seed` in your CLI to insert test data into `ecommerce_db`. Please note that you must have completed Step 4 and successfully created ecommerce_db for the seed files to work. 
 
 ## Usage
-[Video Demo]()
+[Video Demo](https://youtu.be/nf3LFDj1ixw)
 
 1. Please start the server by using the command `npm start` to successfully conduct tests on the seed data. 
 
@@ -180,21 +180,26 @@ DB_PW = [Please insert your MySQL Workbench Password here]
 http://localhost:3001/api/tags - to GET all tags
 http://localhost:3001/api/products/1 - to GET a product by its primary key
 http://localhost:3001/api/categories - to GET all categories
-
 ```
 
 ## Contributions
-For contributions, you may follow the industry standard: [Contributor Covenant](https://www.contributor-covenant.org/)
+For contributions, you may follow the industry standard: [Contributor Covenant](https://www.contributor-covenant.org/).
+<br>
+Please
 
 ## Credits
-License badges used in this project were retrieved from GitHub user's `lukas-h` license-badge markdown file: [Markdown License badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba).
 
-Basic NPM Packages were used: [NPM Packages](https://www.npmjs.com/).
+* License badges used in this project were retrieved from GitHub user's `lukas-h` license-badge markdown file: [Markdown License badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba).
 
-Starter code provided by © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+* Basic NPM Packages were used: [NPM Packages](https://www.npmjs.com/).
 
-Banner for README file obtained from [Vecteezy.com](https://www.vecteezy.com/vector-art/2006605-paper-art-shopping-online-on-smartphone-and-new-buy-sale-promotion-pink-backgroud-for-banner-market-ecommerce).
+* Starter code provided by © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
 
+* Banner for README file obtained from [Vecteezy.com](https://www.vecteezy.com/vector-art/2006605-paper-art-shopping-online-on-smartphone-and-new-buy-sale-promotion-pink-backgroud-for-banner-market-ecommerce).
+
+* Music backtrack used in the application's video demo: `Beneath The Mask (Instrumental Version) by Lyn`, from the [Persona 5 Original Soundtrack](https://music.apple.com/us/album/persona-5-original-soundtrack/1226945984). 
+
+*NO COPYRIGHT INFRINGEMENT INTENDED* "This demonstration video uses copyrighted material in a manner that does not require approval of the copyright holder and is for educational purposes only. It is a fair use under copyright law. This video is not monetised and its sole purpose is for a university assignment, showcasing the development of an e-commerce backend application."
 
 ## Tests
 Sample data from `seed.sql` was used for testing. Some screenshots of the tests are below. 
@@ -211,7 +216,7 @@ Sample data from `seed.sql` was used for testing. Some screenshots of the tests 
 <img src="./images/test-createnewtag.png" width="100%">
 <br>
 
-Elaborate testing is demonstrated in the [video demo]().
+Elaborate testing is demonstrated in the [video demo](https://youtu.be/nf3LFDj1ixw).
 
 ## Questions
 Any questions? Feel free to contact me via my GitHub profile: [Aaron Au Yoong's GitHub Profile](https://github.com/aaronauyoong)
